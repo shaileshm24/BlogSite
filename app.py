@@ -12,11 +12,7 @@ with open("config.json",'r') as c:
     params = json.load(c)["params"]
 local_server= False
 
-<<<<<<< HEAD
 app = Flask(__name__,template_folder='Templates',static_folder="Static")
-=======
-app = Flask(__name__,template_folder = 'Template',static_folder = 'Static')
->>>>>>> 8310845a414912df652d5acd3ff1d2c176974f6b
 app.secret_key = 'super-secret-key'
 app.config['UPLOAD_FOLDER'] = params['upload_location']
 app.config.update(
@@ -173,8 +169,4 @@ def posts(post_slug):
     posts = Posts.query.filter_by(slug = post_slug).first()
     return render_template("post.html", params=params, post = posts)
 
-<<<<<<< HEAD
 #app.run(debug = True)
-=======
-#app.run(debug = True)
->>>>>>> 8310845a414912df652d5acd3ff1d2c176974f6b
