@@ -10,9 +10,9 @@ import os
 
 with open("config.json",'r') as c:
     params = json.load(c)["params"]
-local_server= True
+local_server= False
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='Templates',static_folder="Static")
 app.secret_key = 'super-secret-key'
 app.config['UPLOAD_FOLDER'] = params['upload_location']
 app.config.update(
@@ -169,4 +169,4 @@ def posts(post_slug):
     posts = Posts.query.filter_by(slug = post_slug).first()
     return render_template("post.html", params=params, post = posts)
 
-app.run(debug = True)
+#app.run(debug = True)

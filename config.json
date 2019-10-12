@@ -3,7 +3,7 @@
   {
     "local_server": "True",
     "local_uri": "mysql://root:shailesh@97@localhoost/blogsite?host=localhost?port=3306",
-    "prod_uri": "mysql://root:shailesh@97@localhoost/blogsite?host=localhost?port=3306",
+    "prod_uri": "mysql://uk2qtws4ke4bhzww:EJaVpvkjMTp53z7st8St@b1jmyqyn3zdbkeowtyl2-mysql.services.clever-cloud.com:3306/b1jmyqyn3zdbkeowtyl2",
     "Blog_name": "Bloggers Adda",
     "gmail_user": "shailurajemali007@gmail.com",
     "gmail_password": "rkshailesh97",
