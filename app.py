@@ -160,7 +160,7 @@ def contact():
                           recipients = [params['gmail_user']],
                           body = msg + "\n" + phone + "\n" + email
                           )
-        #db.create_all(app)
+    
         flash("Thanks for submitting your details. We will get back to you soon", "success")
     return render_template("contact.html", params= params)
 
