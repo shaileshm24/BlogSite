@@ -10,9 +10,9 @@ import os
 
 with open("config.json",'r') as c:
     params = json.load(c)["params"]
-local_server= True
+local_server= False
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder = 'Template',static_folder = 'Static')
 app.secret_key = 'super-secret-key'
 app.config['UPLOAD_FOLDER'] = params['upload_location']
 app.config.update(
