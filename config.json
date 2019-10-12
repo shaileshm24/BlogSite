@@ -1,0 +1,18 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:shailesh@97@localhoost/blogsite?host=localhost?port=3306",
+    "prod_uri": "mysql://root:shailesh@97@localhoost/blogsite?host=localhost?port=3306",
+    "Blog_name": "Bloggers Adda",
+    "gmail_user": "shailurajemali007@gmail.com",
+    "gmail_password": "rkshailesh97",
+    "no_of_post": 4,
+    "login_img": "login.svg",
+    "admin_user": "blog",
+    "password": "123456789",
+    "upload_location" : "C:\\Users\\Dell\\PycharmProjects\\BlogSite\\Static\\img"
+
+
+  }
+}
