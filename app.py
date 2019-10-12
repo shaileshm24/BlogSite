@@ -169,4 +169,4 @@ def posts(post_slug):
     posts = Posts.query.filter_by(slug = post_slug).first()
     return render_template("post.html", params=params, post = posts)
 
-app.run(debug = True)
+#app.run(debug = True)
